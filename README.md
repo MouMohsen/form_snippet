@@ -76,7 +76,7 @@ a {
 
 .cta_btn {
     text-align: center;
-    background-color: var(--fbox-main-color);
+    background-color: #F4405E;
     border-radius: 3px;
     padding: 15px 0px;
     margin-top: 10px;
@@ -97,7 +97,7 @@ a {
     text-align: center;
     padding: 40px 34px;
     background-color: #fff;
-    border-top: 5px solid var(--fbox-main-color);
+    border-top: 5px solid #F4405E;
     font-size: 14px;
     line-height: 1.75;
     font-weight: 400;
@@ -448,11 +448,11 @@ a {
 }
 
 /**
- * ==============================================
- * Dot Falling
- * ==============================================
- */
- .dot-falling {
+     * ==============================================
+     * Dot Falling
+     * ==============================================
+     */
+.dot-falling {
     position: relative;
     left: -10000px;
     width: 10px;
@@ -460,14 +460,17 @@ a {
     border-radius: 5px;
     animation: dot-falling 1s infinite linear;
     animation-delay: 0.1s;
-  }
-  .dot-falling::before, .dot-falling::after {
+}
+
+.dot-falling::before,
+.dot-falling::after {
     content: "";
     display: inline-block;
     position: absolute;
     top: 0;
-  }
-  .dot-falling::before {
+}
+
+.dot-falling::before {
     width: 10px;
     height: 10px;
     border-radius: 5px;
@@ -475,8 +478,9 @@ a {
     color: #9880ff;
     animation: dot-falling-before 1s infinite linear;
     animation-delay: 0s;
-  }
-  .dot-falling::after {
+}
+
+.dot-falling::after {
     width: 10px;
     height: 10px;
     border-radius: 5px;
@@ -484,65 +488,73 @@ a {
     color: #9880ff;
     animation: dot-falling-after 1s infinite linear;
     animation-delay: 0.2s;
-  }
-  
-  @keyframes dot-falling {
+}
+
+@keyframes dot-falling {
     0% {
-      box-shadow: 10000px -10px 0 0 var(--fbox-main-color);
+        box-shadow: 10000px -10px 0 0 #F4405E;
     }
-    25%, 50%, 75% {
-      box-shadow: 10000px 0 0 0 var(--fbox-main-color);
+
+    25%,
+    50%,
+    75% {
+        box-shadow: 10000px 0 0 0 #F4405E;
     }
+
     100% {
-      box-shadow: 10000px 10px 0 0 var(--fbox-main-color);
+        box-shadow: 10000px 10px 0 0 #F4405E;
     }
-  }
-  @keyframes dot-falling-before {
+}
+
+@keyframes dot-falling-before {
     0% {
-      box-shadow: 9985px -10px 0 0 var(--fbox-main-color);
+        box-shadow: 9985px -10px 0 0 #F4405E;
     }
-    25%, 50%, 75% {
-      box-shadow: 9985px 0 0 0 var(--fbox-main-color);
+
+    25%,
+    50%,
+    75% {
+        box-shadow: 9985px 0 0 0 #F4405E;
     }
+
     100% {
-      box-shadow: 9985px 10px 0 0 var(--fbox-main-color);
+        box-shadow: 9985px 10px 0 0 #F4405E;
     }
-  }
-  @keyframes dot-falling-after {
+}
+
+@keyframes dot-falling-after {
     0% {
-      box-shadow: 10005px -10px 0 0 var(--fbox-main-color);
+        box-shadow: 10005px -10px 0 0 #F4405E;
     }
-    25%, 50%, 75% {
-      box-shadow: 10005px 0 0 0 var(--fbox-main-color);
+
+    25%,
+    50%,
+    75% {
+        box-shadow: 10005px 0 0 0 #F4405E;
     }
+
     100% {
-      box-shadow: 10005px 10px 0 0 var(--fbox-main-color);
+        box-shadow: 10005px 10px 0 0 #F4405E;
     }
-  }
+}
 
 /**
- * ==============================================
- * Centering Falling Dots
- * ==============================================
- */
+     * ==============================================
+     * Centering Falling Dots
+     * ==============================================
+     */
 
-  .loading {
+.loading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-:root {
-    --fbox-main-color: #F4405E;
-}
-
 p:has(.cta_btn) {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column;
-    text-align: center; */
 }
 
 .cta_btn {
